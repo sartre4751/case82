@@ -1,0 +1,2135 @@
+<!DOCTYPE html>
+<html>
+<style>
+  @font-face {
+    font-family: 'NotoSerifKR';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NotoSerifKR.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+  background-color: black;
+  margin-right: 20;
+}
+
+h1{
+  position: fixed;
+  left:50px;
+  font-size: 30pt;
+  font-family: NotoSerifKR;
+  color:white;
+  z-index: 1;
+}
+
+.index{
+  position: fixed;
+  top: 80px;
+  left:50px;
+  font-size: 15pt;
+  font-family: NotoSerifKR;
+  color:white;
+}
+
+
+.return{
+  position: fixed;
+  top: 25px;
+  right:50px;
+  font-size: 15pt;
+  font-family: NotoSerifKR;
+  color:white;
+  cursor: pointer;
+}
+
+
+
+
+.switch{
+  position: fixed;
+  top: 60px;
+  right:50px;
+  font-size: 15pt;
+  font-family: NotoSerifKR;
+  color:white;
+  cursor: pointer;
+}
+
+p{
+  font-size: 15pt;
+  font-family: NotoSerifKR;
+  color: white
+}
+
+
+a { 
+  text-decoration:none;
+}
+
+a:link {
+  color : black;
+}
+
+a:visited {
+  color : black;
+}
+a:hover {
+  color : white;
+}
+/*a:active {
+  color : green;
+}
+*/
+
+.re:link {
+  color : white;
+}
+
+.re:visited {
+  color : white;
+}
+
+
+#mydiv1-1 {
+  position: absolute;
+  top:280px;
+  left:150px;
+  z-index: 100;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+
+}
+
+
+#mydiv1-2 {
+  position: absolute;
+  top:340px;
+  left:180px;
+  z-index: 99;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv1-3 {
+  position: absolute;
+  top:420px;
+  left:200px;
+  z-index: 98;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv1-4 {
+  position: absolute;
+  top:480px;
+  left:100px;
+  z-index: 97;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv1-5 {
+  position: absolute;
+  top:540px;
+  left:230px;
+  z-index: 96;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv1-6 {
+  position: absolute;
+  top:600px;
+  left:100px;
+  z-index: 95;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv1-7 {
+  position: absolute;
+  top:660px;
+  left:250px;
+  z-index: 94;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv1-8 {
+  position: absolute;
+  top:720px;
+  left:100px;
+  z-index: 93;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv1-9 {
+  position: absolute;
+  top:780px;
+  left:70px;
+  z-index: 92;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv1-10 {
+  position: absolute;
+  top:380px;
+  left:100px;
+  z-index: 99;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+/*----------------중앙------------*/
+
+#mydiv2-1 {
+  position: absolute;
+  top:280px;
+  left:1100px;
+  z-index: 91;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+
+}
+
+
+#mydiv2-2 {
+  position: absolute;
+  top:340px;
+  left:1100px;
+  z-index: 90;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv2-2:hover{
+  z-index: 100;
+}
+
+
+#mydiv2-3 {
+  position: absolute;
+  top:440px;
+  left:1150px;
+  z-index: 89;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv2-4 {
+  position: absolute;
+  top:480px;
+  left:1150px;
+  z-index: 88;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv2-5 {
+  position: absolute;
+  top:540px;
+  left:1050px;
+  z-index: 87;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv2-6 {
+  position: absolute;
+  top:600px;
+  left:1000px;
+  z-index: 86;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv2-7 {
+  position: absolute;
+  top:660px;
+  left:1050px;
+  z-index: 85;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv2-8 {
+  position: absolute;
+  top:720px;
+  left:1050px;
+  z-index: 84;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv2-9 {
+  position: absolute;
+  top:780px;
+  left:1250px;
+  z-index: 83;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv2-10 {
+  position: absolute;
+  top:380px;
+  left:1200px;
+  z-index: 90;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+
+#mydiv2-11 {
+  position: absolute;
+  top:550px;
+  left:1400px;
+  z-index: 100;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+
+}
+
+
+#mydiv2-12 {
+  position: absolute;
+  top:630px;
+  left:1570px;
+  z-index: 100;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv2-13 {
+  position: absolute;
+  top:750px;
+  left:1400px;
+  z-index: 79;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+/*---------------동아-------------*/
+#mydiv3-1 {
+  position: absolute;
+  top:280px;
+  left:2300px;
+  z-index: 91;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+
+}
+
+
+#mydiv3-2 {
+  position: absolute;
+  top:340px;
+  left:2350px;
+  z-index: 100;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+
+
+#mydiv3-3 {
+  position: absolute;
+  top:410px;
+  left:2300px;
+  z-index: 89;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv3-4 {
+  position: absolute;
+  top:480px;
+  left:2200px;
+  z-index: 88;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv3-5 {
+  position: absolute;
+  top:540px;
+  left:2300px;
+  z-index: 87;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv3-6 {
+  position: absolute;
+  top:600px;
+  left:2350px;
+  z-index: 86;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv3-7 {
+  position: absolute;
+  top:660px;
+  left:2300px;
+  z-index: 85;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv3-8 {
+  position: absolute;
+  top:720px;
+  left:2300px;
+  z-index: 84;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv3-9 {
+  position: absolute;
+  top:780px;
+  left:2400px;
+  z-index: 83;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv3-10 {
+  position: absolute;
+  top:380px;
+  left:2150px;
+  z-index: 90;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+/*--------4 한겨레--------*/
+
+#mydiv4-1 {
+  position: absolute;
+  top:280px;
+  left:3300px;
+  z-index: 91;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+
+}
+
+
+#mydiv4-2 {
+  position: absolute;
+  top:350px;
+  left:3400px;
+  z-index: 100;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+
+
+#mydiv4-3 {
+  position: absolute;
+  top:400px;
+  left:3300px;
+  z-index: 89;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv4-4 {
+  position: absolute;
+  top:460px;
+  left:3400px;
+  z-index: 88;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv4-5 {
+  position: absolute;
+  top:540px;
+  left:3300px;
+  z-index: 87;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv4-6 {
+  position: absolute;
+  top:600px;
+  left:3400px;
+  z-index: 86;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv4-7 {
+  position: absolute;
+  top:660px;
+  left:3350px;
+  z-index: 85;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv4-8 {
+  position: absolute;
+  top:720px;
+  left:3350px;
+  z-index: 84;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv4-9 {
+  position: absolute;
+  top:780px;
+  left:3300px;
+  z-index: 83;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv4-10 {
+  position: absolute;
+  top:380px;
+  left:3500px;
+  z-index: 90;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+
+#mydiv4-11 {
+  position: absolute;
+  top:550px;
+  left:3400px;
+  z-index: 100;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+
+}
+
+/*----------경향-------*/
+
+
+#mydiv5-1 {
+  position: absolute;
+  top:280px;
+  left:4400px;
+  z-index: 91;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+
+}
+
+
+#mydiv5-2 {
+  position: absolute;
+  top:350px;
+  left:4150px;
+  z-index: 100;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+
+
+#mydiv5-3 {
+  position: absolute;
+  top:400px;
+  left:4200px;
+  z-index: 89;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv5-4 {
+  position: absolute;
+  top:460px;
+  left:4200px;
+  z-index: 88;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv5-5 {
+  position: absolute;
+  top:540px;
+  left:4300px;
+  z-index: 87;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv5-6 {
+  position: absolute;
+  top:600px;
+  left:4350px;
+  z-index: 86;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv5-7 {
+  position: absolute;
+  top:660px;
+  left:4300px;
+  z-index: 85;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+
+#mydiv5-8 {
+  position: absolute;
+  top:720px;
+  left:4350px;
+  z-index: 84;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv5-9 {
+  position: absolute;
+  top:780px;
+  left:4300px;
+  z-index: 83;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv5-10 {
+  position: absolute;
+  top:380px;
+  left:4500px;
+  z-index: 90;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+
+#mydiv5-11 {
+  position: absolute;
+  top:550px;
+  left:4400px;
+  z-index: 100;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+
+}
+
+#mydiv5-12 {
+  position: absolute;
+  top:720px;
+  left:4350px;
+  z-index: 84;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+
+/*---------------한국----------*/
+
+#mydiv6-1 {
+  position: absolute;
+  top:280px;
+  left:5300px;
+  z-index: 91;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+
+}
+
+
+#mydiv6-2 {
+  position: absolute;
+  top:350px;
+  left:5350px;
+  z-index: 100;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+
+
+#mydiv6-3 {
+  position: absolute;
+  top:400px;
+  left:5300px;
+  z-index: 89;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv6-4 {
+  position: absolute;
+  top:460px;
+  left:5200px;
+  z-index: 88;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv6-5 {
+  position: absolute;
+  top:540px;
+  left:5300px;
+  z-index: 87;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv6-6 {
+  position: absolute;
+  top:600px;
+  left:5350px;
+  z-index: 86;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv6-7 {
+  position: absolute;
+  top:660px;
+  left:5300px;
+  z-index: 85;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv6-8 {
+  position: absolute;
+  top:720px;
+  left:5400px;
+  z-index: 84;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv6-9 {
+  position: absolute;
+  top:780px;
+  left:5300px;
+  z-index: 83;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+
+/*---------서울---------*/
+
+#mydiv7-1 {
+  position: absolute;
+  top:280px;
+  left:6300px;
+  z-index: 91;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+
+}
+
+
+#mydiv7-2 {
+  position: absolute;
+  top:350px;
+  left:6350px;
+  z-index: 100;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv7-3 {
+  position: absolute;
+  top:400px;
+  left:6300px;
+  z-index: 89;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv7-4 {
+  position: absolute;
+  top:460px;
+  left:6250px;
+  z-index: 88;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv7-5 {
+  position: absolute;
+  top:540px;
+  left:6300px;
+  z-index: 87;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv7-6 {
+  position: absolute;
+  top:600px;
+  left:6350px;
+  z-index: 86;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv7-7 {
+  position: absolute;
+  top:660px;
+  left:6300px;
+  z-index: 85;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv7-8 {
+  position: absolute;
+  top:720px;
+  left:6400px;
+  z-index: 84;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv7-9 {
+  position: absolute;
+  top:780px;
+  left:6300px;
+  z-index: 83;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv7-10 {
+  position: absolute;
+  top:380px;
+  left:6500px;
+  z-index: 90;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+/*--------8 kbs-------*/
+
+#mydiv8-1 {
+  position: absolute;
+  top:280px;
+  left:7300px;
+  z-index: 91;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+
+}
+
+
+#mydiv8-2 {
+  position: absolute;
+  top:350px;
+  left:7350px;
+  z-index: 100;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+
+
+#mydiv8-3 {
+  position: absolute;
+  top:400px;
+  left:7300px;
+  z-index: 89;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv8-4 {
+  position: absolute;
+  top:460px;
+  left:7200px;
+  z-index: 88;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv8-5 {
+  position: absolute;
+  top:540px;
+  left:7300px;
+  z-index: 87;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv8-6 {
+  position: absolute;
+  top:600px;
+  left:7350px;
+  z-index: 86;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv8-7 {
+  position: absolute;
+  top:660px;
+  left:7300px;
+  z-index: 85;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv8-8 {
+  position: absolute;
+  top:720px;
+  left:7400px;
+  z-index: 84;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv8-9 {
+  position: absolute;
+  top:780px;
+  left:7300px;
+  z-index: 83;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv8-10 {
+  position: absolute;
+  top:380px;
+  left:7500px;
+  z-index: 90;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+/*---------9 mbc----------*/
+
+#mydiv9-1 {
+  position: absolute;
+  top:280px;
+  left:8300px;
+  z-index: 91;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+
+}
+
+
+#mydiv9-2 {
+  position: absolute;
+  top:350px;
+  left:8350px;
+  z-index: 100;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+
+
+#mydiv9-3 {
+  position: absolute;
+  top:400px;
+  left:8300px;
+  z-index: 89;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv9-4 {
+  position: absolute;
+  top:460px;
+  left:8200px;
+  z-index: 88;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv9-5 {
+  position: absolute;
+  top:540px;
+  left:8300px;
+  z-index: 87;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv9-6 {
+  position: absolute;
+  top:600px;
+  left:8350px;
+  z-index: 86;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv9-7 {
+  position: absolute;
+  top:660px;
+  left:8300px;
+  z-index: 85;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+/*------------10 sbs------------*/
+
+#mydiv10-1 {
+  position: absolute;
+  top:280px;
+  left:9300px;
+  z-index: 91;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+
+}
+
+
+#mydiv10-2 {
+  position: absolute;
+  top:350px;
+  left:9150px;
+  z-index: 100;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+
+
+#mydiv10-3 {
+  position: absolute;
+  top:400px;
+  left:9300px;
+  z-index: 89;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv10-4 {
+  position: absolute;
+  top:460px;
+  left:9200px;
+  z-index: 88;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv10-5 {
+  position: absolute;
+  top:540px;
+  left:9300px;
+  z-index: 87;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv10-6 {
+  position: absolute;
+  top:600px;
+  left:9150px;
+  z-index: 86;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv10-7 {
+  position: absolute;
+  top:660px;
+  left:9300px;
+  z-index: 85;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+/*-------------*/
+
+#fakediv {
+  position: absolute;
+  top:460px;
+  left:9950px;
+  z-index: 88;
+  background-color: transparent;
+  text-align: center;  
+  border: transparent;
+  color: transparent;
+}
+
+#mydivheader {
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-left:25px;
+  padding-right:25px;
+  cursor: pointer;
+  z-index: 10;
+  background-color: #ffffff;
+  border: 1.5px solid black;
+  border-radius: 17px;
+  font-size: 16pt;
+  color: black;
+  box-shadow: 0 3px 10px 0 rgba(0,0,0,0.8), 0 3px 15px 0 rgba(0,0,0,0.2);
+}
+
+#mydivheader:hover{
+  background-color: grey;
+  z-index: 120;
+}
+
+#masterdiv {
+  white-space:nowrap; 
+    overflow-x: auto; }
+
+ .chosun{
+  position: absolute;
+  font-size: 17pt;
+  top:180px;
+  left:350px
+}
+
+.jungang{
+  position: absolute;
+  font-size: 17pt;
+  top:180px;
+  left:1350px
+}
+
+.donga{
+  position: absolute;
+  font-size: 17pt;
+  top:180px;
+  left:2550px
+}
+
+.hani{
+  position: absolute;
+  font-size: 17pt;
+  top:180px;
+  left:3550px 
+}
+
+.khan{
+  position: absolute;
+  font-size: 17pt;
+  top:180px;
+  left:4500px 
+}
+
+.hankook{
+  position: absolute;
+  font-size: 17pt;
+  top:180px;
+  left:5500px 
+}
+
+.seoul{
+  position: absolute;
+  font-size: 17pt;
+  top:180px;
+  left:6550px 
+}
+
+.kbs{
+  position: absolute;
+  font-size: 17pt;
+  top:180px;
+  left:7550px 
+}
+
+.mbc{
+  position: absolute;
+  font-size: 17pt;
+  top:180px;
+  left:8550px 
+}
+
+.sbs{
+  position: absolute; 
+  font-size: 17pt;
+  top:180px;
+  left:9550px 
+}
+
+#bg {
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+    
+  /* Preserve aspet ratio */
+  min-width: 100%;
+  min-height: 100%;
+  opacity: 40%;
+  z-index: 0;
+}
+
+
+#press {
+  white-space:nowrap; 
+    overflow-x: auto; }
+</style>
+<body>
+
+<h1>사건 82</h1>
+<img src="images/82.jpg" id="bg" alt="">
+<!-- <p class="index">헤드라인을 움직여 보세요 어쩌구</p> -->
+<!-- <p class="index">원하는/눈에띄는/재미있는 헤드라인을 찾아보세요!
+다 봤으면 버튼을 눌러 언론사별로도 보세요/ 오른쪽 상단 버튼을 눌러 언론사별로 볼 수 있습니다. or 정리된 모습을 보고 싶다면..</p> -->
+<div id= press>
+<p class="chosun">조선일보</p>
+<p class="jungang">중앙일보</p>
+<p class="donga">동아일보</p>
+<p class="hani">한겨레</p>
+<p class="khan">경향신문</p>
+<p class="hankook">한국일보</p>
+<p class="seoul">서울신문</p>
+<p class="kbs">KBS</p>
+<p class="mbc">MBC</p>
+<p class="sbs">SBS</p>
+
+</div>
+<p class="return"><a href ="https://sartre4751.github.io/case_100_main/case100_main.html" class="re">돌아가기</a></p>
+<!-- <p class="switch">바꾸기</p> -->
+
+<div id="fakediv"> 
+  ...
+</div>
+
+<!-------------조선------------- -->
+<div id="masterdiv">
+<div id="mydiv1-1">
+  <div id="mydivheader"><a href="https://www.chosun.com/national/2020/09/17/PWZ3T335VNFLTNFYX2WREXKB3U/" target="_blank">엄마는 집에 없고 배가 고파서...인천 라면형제 덮친 불길  </a> </div>
+</div>
+
+<div id="mydiv1-2">
+  <div id="mydivheader"><a href="https://www.chosun.com/national/2020/09/17/YZP2JRSMMBCFJCBCA4EGBMUJ24/" target="_blank">이불로 동생 끝까지 보호... 8살 아이 지켜준 건 10살 형 뿐이었다 
+</a></div>
+</div>
+
+<div id="mydiv1-3">
+  <div id="mydivheader"><a href="https://www.chosun.com/national/2020/09/20/2JW3EGREWFCVDNXMK7BKCZXLTY/" target="_blank">인천 라면형제, 아직 못깨어났다...엄마 “아이 상태, 알리지 말라” </a></div></div>
+
+  
+<div id="mydiv1-4">
+  <div id="mydivheader"><a href="https://www.chosun.com/politics/blue_house/2020/09/22/LRCSNQ6GTZDJDPCYCT4SZWQFYQ/" target="_blank">文대통령 ‘라면형제’ 사건에 “아동 강제보호 등 대책 찾으라”  </a> </div>
+</div>
+
+
+<div id="mydiv1-5">
+  <div id="mydivheader"><a href="https://www.chosun.com/national/2020/09/21/XRJTLAGOEVFSZAHU2HOUOQ2F64/" target="_blank">
+  인천 ‘라면형제’ 돕기 성금 5000만원 돌파...형제 소식은 ‘깜깜’   </a></div>
+</div>
+
+<!-- 
+<div id="mydiv1-6">
+  <div id="mydivheader"><a href="https://www.chosun.com/politics/diplomacy-defense/2020/09/24/K3GWMX6PWJEK3MGHO3XXFNFMYA/" target="_blank">[영상] “사살까지는 예상 못했다" 총살·화형 지켜만 본 정부  </a></div></div>
+
+<div id="mydiv1-7">
+  <div id="mydivheader"><a href="https://www.chosun.com/national/2020/09/24/I7VVD3ULCBFZTA7R3UEM4QEKCY/" target="_blank">박태환도 3시간반 걸릴 거리를... 47세가 헤엄쳐 월북? </a> </div>
+</div>
+
+<div id="mydiv1-8">
+  <div id="mydivheader"><a href="https://www.chosun.com/national/2020/09/25/2ZQJHF76ZZCDDIKTMNKADZJ4VY/" target="_blank">이 와중에...김어준 “그는 월북자로 대우받았을 사람" "북한이 火葬”    </a></div>
+</div>
+
+<div id="mydiv1-9">
+  <div id="mydivheader"><a href="https://www.chosun.com/politics/diplomacy-defense/2020/09/25/F3LFJJO3VNCRDIULZJSRWC2AIA/" target="_blank">물살 거셌는데 튜브 하나로 월북?… 커지는 미스터리   </a></div>
+</div>
+
+<div id="mydiv1-10">
+  <div id="mydivheader"><a href="https://www.chosun.com/politics/blue_house/2020/09/25/FIV4A4YZKFBFJPV7E2AXNFS2EQ/" target="_blank">文, 첫 보고 받고도 조치안해… 3시간뒤 北은 우리 국민 쐈다  </a></div>
+</div> -->
+
+
+<!-- ----------------중앙------------ -->
+
+<div id="mydiv2-1">
+  <div id="mydivheader"><a href="https://news.joins.com/article/23875280" target="_blank">'라면 형제' 불길 덮치자…10살 형은 8살 동생부터 보호했다   </a></div>
+</div>
+
+<div id="mydiv2-2">
+  <div id="mydivheader"><a href="https://news.joins.com/article/23875732" target="_blank">지자체·기관·경찰 다 학대 알면서, '라면형제' 비극 못막았다    </a></div>
+</div>
+
+<div id="mydiv2-3">
+  <div id="mydivheader"><a href="https://news.joins.com/article/23875310" target="_blank">안철수 “통신비 2만원, '라면 화재' 형제 구하는 데 써라" </a></div></div>
+
+<div id="mydiv2-4">
+  <div id="mydivheader"><a href="https://news.joins.com/article/23876477" target="_blank">[이하경 칼럼] 문 대통령은 끝내 ‘라면 형제’의 비명을 못 들었다  </a></div>
+</div>
+<!-- 
+<div id="mydiv2-5">
+  <div id="mydivheader"><a href="https://news.joins.com/article/23880385" target="_blank">피격 공무원 일상…페북엔 "연평도 노을" "우리 딸" 사진들   </a></div>
+</div>
+
+<div id="mydiv2-6">
+  <div id="mydivheader"><a href="https://news.joins.com/article/23880138" target="_blank">연평도 '北 피격' 공무원 실종 당일부터 시간대별 상황 살펴보니  </a></div>
+</div>
+
+<div id="mydiv2-7">
+  <div id="mydivheader"><a href="https://news.joins.com/article/23880026" target="_blank">어업관리선에 슬리퍼 남기고 사라진 공무원…실종 시점은? 
+   </a></div>
+</div>
+
+<div id="mydiv2-8">
+  <div id="mydivheader"><a href="https://news.joins.com/article/23880253" target="_blank">'北 피격' 공무원 친형 "월북 근거 어디서 나왔는지 의문" </a></div>
+</div> 
+
+<div id="mydiv2-9">
+  <div id="mydivheader"><a href="https://news.joins.com/article/23880754" target="_blank">전직 국제통 검사 "北연평도 살인, 증거 모으고 윗선 밝혀야"  </a> </div>
+</div>
+ -->
+<!-- ----------------동아------------ -->
+
+<div id="mydiv3-1">
+  <div id="mydivheader"><a href="https://www.donga.com/news/Society/article/all/20200919/103006359/1" target="_blank">인천 ‘라면화재 형제’ 닷새째 의식 못찾아
+ </a> </div>
+</div>
+
+
+<div id="mydiv3-2">
+  <div id="mydivheader"><a href="https://www.donga.com/news/Society/article/all/20200921/103039196/1" target="_blank">‘라면 화재’ 초등생 형제 집, 의무시설인 화재감지기 설치 안돼</a></div>
+</div>
+
+
+<div id="mydiv3-3">
+  <div id="mydivheader"><a href="https://www.donga.com/news/Society/article/all/20200918/103002507/1" target="_blank">정부, ‘라면 형제’ 참사로 취약 아동 7만명 집중 점검</a></div>
+</div>
+
+<div id="mydiv3-4">
+  <div id="mydivheader"><a href="https://www.donga.com/news/Society/article/all/20200917/102985282/1" target="_blank">‘3도 화상, 1도 화상’…“불길 번지자 10살 형은 8살 동생을 감쌌다”</a></div>
+</div>
+
+<div id="mydiv3-5">
+  <div id="mydivheader"><a href="https://www.donga.com/news/Society/article/all/20200918/103004529/1" target="_blank">확인도 않고 “깨어났다”…인천시·교육청 ‘라면형제’ 두번 울렸다</a> </div>
+</div>
+
+
+<div id="mydiv3-6">
+  <div id="mydivheader"><a href="https://www.donga.com/news/Opinion/article/all/20200919/103006334/1" target="_blank">코로나 속 방치된 아이들
+ </a> </div>
+</div>
+
+<!-- <div id="mydiv3-7">
+  <div id="mydivheader"><a href="https://www.donga.com/news/Society/article/all/20200924/103100419/1" target="_blank">‘北 피격 공무원 사건’ 시민 충격·분노…“정부 대응 안일” 지적도</a></div>
+</div>
+
+<div id="mydiv3-8">
+  <div id="mydivheader"><a href="https://www.donga.com/news/Politics/article/all/20200925/103106212/1" target="_blank">군인권센터 “北만행, 제네바협약 위반…유엔에 방문조사 요청할 것”</a> </div>
+</div>
+
+<div id="mydiv3-9">
+  <div id="mydivheader"><a href=">https://www.donga.com/news/Politics/article/all/20200924/103094494/1" target="_blank">軍, 공무원 피살 지켜보고 있었다…北 만행 현장에 속수무책</a> </div>
+</div>
+ -->
+<!-- ----------------4 한겨레------------ -->
+
+
+<div id="mydiv4-1">
+  <div id="mydivheader"><a href="https://www.hani.co.kr/arti/area/capital/962486.html" target="_blank">              
+라면 끓이다 불낸 형제 어머니, 이웃이 3차례나 '아동방임' 신고          
+</a></div>
+</div>
+
+<div id="mydiv4-2">
+  <div id="mydivheader"><a href="https://www.hani.co.kr/arti/area/capital/962616.html" target="_blank">“애들 방치” 신고만 3차례…결국 형제는 라면 물을 끓였다</a></div>
+</div>
+
+<!-- <div id="mydiv4-3">
+  <div id="mydivheader"><a href="https://www.hani.co.kr/arti/opinion/editorial/963586.html" target="_blank"> [사설] 민간인 사살하고 불태운 북한의 충격적인 '범죄'</a> </div>
+</div>
+
+
+<div id="mydiv4-4">
+  <div id="mydivheader"><a href="https://www.hani.co.kr/arti/economy/economy_general/963578.html" target="_blank">해수부 “가지런히 벗어놓은 슬리퍼 발견…단순실족으로 보기 어려워</a></div>
+</div>
+
+
+<div id="mydiv4-5">
+  <div id="mydivheader"><a href="https://www.hani.co.kr/arti/area/honam/963655.html" target="_blank">피격 공무원 동료 “월북 시도는 전혀 이해되지 않아”2
+</a></div>
+</div>
+
+<div id="mydiv4-6">
+  <div id="mydivheader"><a href="hhttps://m.hani.co.kr/arti/opinion/editorial/963701.html" target="_blank">[사설] 김정은 위원장 사과, 후속조처로 진정성 입증해야
+</a></div>
+</div> -->
+
+<!-- <div id="mydiv4-7">
+  <div id="mydivheader"><a href="https://www.hani.co.kr/arti/economy/property/956492.html" target="_blank">김현미 “전월세전환율 4.0% 너무 높아…시행령 바꿀 것”
+</a></div>
+</div>
+
+<div id="mydiv4-8">
+  <div id="mydivheader"><a href="hhttps://www.hani.co.kr/arti/economy/property/956258.html" target="_blank">“임대차3법, 기울어진 운동장에서 세입자 권리 강화”[사설] </a></div>
+</div>
+
+
+<div id="mydiv4-9">
+  <div id="mydivheader"><a href="https://www.hani.co.kr/arti/economy/property/956180.html" target="_blank">세입자 권리 무력화 꼼수들…정부 “대응책 마련”
+</a> </div>
+</div>
+ -->
+
+
+<!-- ----------------5 경향------------ -->
+
+
+<div id="mydiv5-1">
+  <div id="mydivheader"><a href="http://news.khan.co.kr/kh_news/khan_art_view.html?art_id=202009171040001" target="_blank">엄마 없이 끼니 때우려다 전신화상 입은 형제 사흘째 의식불명 </a> </div>
+</div>
+
+<div id="mydiv5-2">
+  <div id="mydivheader"><a href="http://news.khan.co.kr/kh_news/khan_art_view.html?art_id=202009221541001" target="_blank">문 대통령, ‘라면형제’ 사건에 “방치되는 아동 없도록 각별한 대책 세워달라”</a></div>
+</div> 
+
+<div id="mydiv5-3">
+  <div id="mydivheader"><a href="https://m.khan.co.kr/view.html?art_id=202009222043015" target="_blank">“교육복지사 모든 학교에 배치, 제2 인천 형제 막아야”</a></div>
+</div>
+
+<div id="mydiv5-4">
+  <div id="mydivheader"><a href="https://m.khan.co.kr/view.html?art_id=202009180300055" target="_blank">[기고] 집이 더 위험한데…문 닫는 청소년 시설</a></div>
+</div>
+
+<!-- <div id="mydiv5-5">
+  <div id="mydivheader"><a href="http://news.khan.co.kr/kh_news/khan_art_view.html?art_id=202009241643001" target="_blank">28시간 표류 후 발견, 6시간 방치 후 사살···공무원 북 피격 사건 시간대별 재구성</a> </div>
+</div> -->
+
+<!-- <div id="mydiv5-6">
+  <div id="mydivheader"><a href="http://news.khan.co.kr/kh_news/khan_art_view.html?art_id=202008042045005 " target="_blank">서울시 “35층 층고제한 풀기 어렵다”…시작부터 정부와 삐걱
+</a> </div></div> -->
+<!-- 
+<div id="mydiv5-7">
+  <div id="mydivheader"><a href="http://news.khan.co.kr/kh_news/khan_art_view.html?art_id=202008112025025" target="_blank">[사설]최장 장마·기록적 폭우, 기후변화 중장기 대책 시급하다</a></div></div> -->
+
+<!-- <div id="mydiv5-8">
+  <div id="mydivheader"><a href="http://news.khan.co.kr/kh_news/khan_art_view.html?art_id=202008241649001" target="_blank">"국시 거부 의대생 구제 반대" 청와대 국민청원에 15만명 동의</a> </div>
+</div>
+
+<div id="mydiv5-9">
+  <div id="mydivheader"><a href="http://news.khan.co.kr/kh_news/khan_art_view.html?art_id=202006182102005 " target="_blank">
+‘군사 행동’ 예고한 북한 ‘김여정 비판’엔 무반응</a> </div>
+</div> -->
+
+<!-- ----------------6 한국------------ -->
+
+
+
+<div id="mydiv6-1">
+  <div id="mydivheader"><a href="https://www.hankookilbo.com/News/Read/A2020091618090001976"target="_blank">[단독] '가스불 중태' 초등생 형제…사고 전 어머니 격리 청구 있었다
+  </a> </div>
+</div>
+
+
+<div id="mydiv6-2">
+  <div id="mydivheader"><a href="https://www.hankookilbo.com/News/Read/A2020091814410002650" target="_blank">인천 화재 사건이 일깨운 위태로운 '코로나 아이들'
+  </a></div>
+</div>
+
+<!-- <div id="mydiv6-3">
+  <div id="mydivheader"><a href="https://www.hankookilbo.com/News/Read/A2020083109400000636" target="_blank">보수판 손혜원? 통합당 새 이름 지은 김수민은 누구
+  </a></div>
+</div> -->
+
+<!-- <div id="mydiv6-4">
+  <div id="mydivheader"><a href="https://www.hankookilbo.com/News/Read/A2020092514160001258" target="_blank">[속보] 김정은 전격 사과 "불미스러운 일... 남녘에 대단히 미안"
+  </a> </div>
+</div>
+
+<div id="mydiv6-5">
+  <div id="mydivheader"><a href="https://www.hankookilbo.com/News/Read/A2020092415380001944" target="_blank">피격 공무원 SNS에는 아들딸 사진 가득…동료 "월북 낌새 없었다"</a> </div>
+</div>
+
+
+<div id="mydiv6-6">
+  <div id="mydivheader"><a href="https://www.hankookilbo.com/News/Read/A2020092507470000590" target="_blank">시신 불태운 북한, 코로나19 특집기사만 쏟아냈다</a> </div>
+</div>
+
+<div id="mydiv6-7">
+  <div id="mydivheader"><a href="https://www.hankookilbo.com/News/Read/A2020092515220002844" target="_blank">"北, 월북자 화장했다"는 김어준에…조수진 "궤변을 밥 먹듯" 비판</a> </div>
+</div>
+
+<div id="mydiv6-8">
+  <div id="mydivheader"><a href="https://www.hankookilbo.com/News/Read/A2020092414150004823" target="_blank"> "북한, 南공무원 총살 20분 만에 시신 태웠다"</a> </div>
+</div> -->
+
+<!-- <div id="mydiv6-9">
+  <div id="mydivheader"><a href="https://www.hankookilbo.com/News/Read/A2020083110400001151" target="_blank">최대집 "파시스트 문재인 … 의사들에 이래라저래라 말라"</a></div>
+</div> -->
+
+<!-- ----------------7 서울------------ -->
+
+<div id="mydiv7-1">
+  <div id="mydivheader"><a href="https://www.seoul.co.kr/news/newsView.php?id=20200919500017" target="_blank">“초등생 형제 엄마, 병원에 있다” 형제는 여전히 의식불명</a></div>
+</div>
+
+<div id="mydiv7-2">
+  <div id="mydivheader"><a href="https://www.seoul.co.kr/news/newsView.php?id=20200919500002" target="_blank"> ‘라면 형제’처럼 방치된 아이들이 어딘가 또 있다</a></div>
+</div>
+
+<div id="mydiv7-3">
+<div id="mydivheader"><a href="https://www.seoul.co.kr/news/newsView.php?id=20200918500120" target="_blank">‘라면 형제’ 닷새째 의식 불명…중환자실 치료</a> </div>
+</div>
+
+
+<div id="mydiv7-4">
+  <div id="mydivheader"><a href="https://www.seoul.co.kr/news/newsView.php?id=20200921500054" target="_blank">“위치 파악 빨랐다면”...‘라면 화재’ 형제 안타까운 사연</a> </div></div>
+
+<div id="mydiv7-5">
+  <div id="mydivheader"><a href="https://www.seoul.co.kr/news/newsView.php?id=20200918001008" target="_blank"> 방치도 학대다… 위태로운 ‘코로나 아이들’</a></div></div>
+
+<!--  <div id="mydiv7-6">
+  <div id="mydivheader"><a href="https://www.seoul.co.kr/news/newsView.php?id=20200924500115" target="_blank">“9·19 군사합의엔 ‘사격하지 말라’ 내용 없다” 군 해명 ‘오락가락’
+</a> </div>
+</div>
+
+ <div id="mydiv7-7">
+  <div id="mydivheader"><a href="https://www.seoul.co.kr/news/newsView.php?id=20200925500085" target="_blank">대한변협 “북한군 총격에 국민 피살, 정부 단호히 대응해야”
+</a> </div>
+</div>
+ -->
+<!--  <div id="mydiv7-8">
+  <div id="mydivheader"><a href="https://www.seoul.co.kr/news/newsView.php?id=20200828005013" target="_blank">“전문의가 뚝딱 만들어지나” “공공의료기관으로 취약지 해결”
+</a> </div>
+</div>
+ -->
+
+<!-- ----------------8 kbs------------ -->
+
+
+<div id="mydiv8-1">
+  <div id="mydivheader"><a href="https://news.kbs.co.kr/news/view.do?ncd=5006710" target="_blank">코로나시대 '돌봄 사각지대'…라면 끓이려던 초등생 형제 '중태'
+</a></div>
+</div>
+
+
+
+<!-- <div id="mydiv8-2">
+  <div id="mydivheader"><a href="https://news.kbs.co.kr/news/view.do?ncd=4528973" target="_blank">통합당 새 이름 ‘국민의힘’, “닮은 듯 아닌 듯”…선관위 선택은?</a> </div>
+</div> -->
+
+<!-- 
+
+<div id="mydiv8-3">
+  <div id="mydivheader"><a href="http://news.kbs.co.kr/news/view.do?ncd=5012622" target="_blank">미 정부, 공무원 사살에 “한국의 규탄 전적으로 지지”</a> </div>
+</div>
+
+<div id="mydiv8-4">
+  <div id="mydivheader"><a href="http://news.kbs.co.kr/news/view.do?ncd=5012597" target="_blank">외신, 北 한국인 사살에 “소름끼쳐”…기로에 선 증시, “조정 VS 저가매수”</a>
+</div></div>
+
+<div id="mydiv8-5">
+  <div id="mydivheader"><a href="http://news.kbs.co.kr/news/view.do?ncd=5012426" target="_blank">서해상 실종 공무원 北 총격 사망…軍 “천인공노할 만행”</a> </div> 
+</div>
+
+ <div id="mydiv8-6">
+  <div id="mydivheader"><a href="http://news.kbs.co.kr/news/view.do?ncd=5012410" target="_blank">내일 복귀 예정이던 ‘무궁화 10호’…어떤 일 했나?
+</a> </div>
+</div>
+
+<div id="mydiv8-7">
+  <div id="mydivheader"><a href="http://news.kbs.co.kr/news/view.do?ncd=5012405" target="_blank">실종·북 해역에서 발견·피격까지…시간대별 상황 재구성</a> </div>
+</div>
+
+ <div id="mydiv8-8">
+  <div id="mydivheader"><a href="http://news.kbs.co.kr/news/view.do?ncd=5012404" target="_blank">서해상 실종 공무원 北 총격 사망…軍 “천인공노할 만행”
+</a> </div>
+</div> -->
+
+<!-- ----------------9 mbc------------ -->
+<div id="mydiv9-1">
+  <div id="mydivheader"><a href="https://imnews.imbc.com/replay/2020/nwdesk/article/5911024_32524.html" target="_blank">"부모 없는데 음식 하다"…화재로 의식 잃은 초등생 형제
+</a> </div>
+</div>
+
+<div id="mydiv9-2">
+  <div id="mydivheader"><a href="https://imnews.imbc.com/replay/2020/nwdesk/article/5913247_32524.html" target="_blank"> 학교에서 돌봐준다 했더니…"밥 잘 차려주고 있다"
+</a></div>
+</div>
+
+<div id="mydiv9-3">
+  <div id="mydivheader"><a href="https://imnews.imbc.com/replay/2020/nwtoday/article/5913597_32531.html" target="_blank"> [단독] 어린 두 아들 집에 두고…엄마는 전날부터 없었다</a></div>
+</div>
+<!-- 
+<div id="mydiv9-4">
+  <div id="mydivheader"><a href="https://imnews.imbc.com/news/2020/world/article/5890709_32640.html" target="_blank">日마이니치 "아베 총리, 암 검사 받았다"</a> </div>
+</div>
+ -->
+<!-- <div id="mydiv9-5">
+  <div id="mydivheader"><a href="https://imnews.imbc.com/replay/2020/nwdesk/article/5889967_32524.html" target="_blank">업무복귀 거부하고 사직서 제출…"법적 대응"</a></div>
+</div> -->
+<!-- 
+
+<div id="mydiv9-6">
+  <div id="mydivheader"><a href="https://imnews.imbc.com/news/2020/econo/article/5858652_32647.html" target="_blank">[알려줘! 경제] 전·월세 무조건 4년 된다? 세입자가 갑?  </a> </div>
+</div>
+
+<div id="mydiv9-7">
+  <div id="mydivheader"><a href="https://imnews.imbc.com/replay/2020/nwtoday/article/5858350_32531.html" target="_blank">"이르면 다음 주 시행"…기존 전·월세도 적용</a></div>
+</div>-->
+
+<!-- ----------------10 sbs------------ -->
+<div id="mydiv10-1">
+  <div id="mydivheader"><a href="https://news.sbs.co.kr/news/endPage.do?news_id=N1005961578&plink=SEARCH&cooper=SBSNEWSSEARCH" target="_blank">라면 불 중상' 초등생 형제 엄마, 장애 있는 큰아들 폭행</a></div>
+</div>
+
+<div id="mydiv10-2">
+  <div id="mydivheader"><a href="https://news.sbs.co.kr/news/endPage.do?news_id=N1005984731&plink=SEARCH&cooper=SBSNEWSSEARCH" target="_blank">인천 화재 형제에 쏟아지는 온정…"무사히 깨어나길 기도합니다"</a></div>
+</div>
+
+<div id="mydiv10-3">
+  <div id="mydivheader"><a href="https://news.sbs.co.kr/news/endPage.do?news_id=N1005987860&plink=SEARCH&cooper=SBSNEWSSEARCH" target="_blank">편의점서 40분 고민한 '라면 형제' "하루 종일 굶었어요</a></div>
+</div>
+
+<div id="mydiv10-4">
+  <div id="mydivheader"><a href="https://news.sbs.co.kr/news/endPage.do?news_id=N1005987830&plink=SEARCH&cooper=SBSNEWSSEARCH" target="_blank">라면 화재 형제' 엿새째 의식 불명…후원금 이어져</a> </div>
+</div>
+
+
+<div id="mydiv10-5">
+  <div id="mydivheader"><a href="https://news.sbs.co.kr/news/endPage.do?news_id=N1005987213&plink=SEARCH&cooper=SBSNEWSSEARCH" target="_blank">새벽 3시 편의점 간 '라면 형제'…"엄마 아파서 굶어</a> </div>
+</div>
+
+<div id="mydiv10-6">
+  <div id="mydivheader"><a href="https://news.sbs.co.kr/news/endPage.do?news_id=N1005987003&plink=SEARCH&cooper=SBSNEWSSEARCH"target="_blank">라면 화재' 형제 닷새째 의식 불명…산소호흡기 의존</a></div>
+</div>
+
+<div id="mydiv10-7">
+  <div id="mydivheader"><a href="https://news.sbs.co.kr/news/endPage.do?news_id=N1005985596&plink=SEARCH&cooper=SBSNEWSSEARCH"target="_blank">母 방임 수차례 신고했는데…초등생 형제 라면 끓이다 화상</a></div>
+</div>
+
+</div>
+<script>  
+dragElement(document.getElementById("mydiv1-1"));
+dragElement(document.getElementById("mydiv1-2"));
+dragElement(document.getElementById("mydiv1-3"));
+dragElement(document.getElementById("mydiv1-4"));
+dragElement(document.getElementById("mydiv1-5"));
+dragElement(document.getElementById("mydiv1-6"));
+dragElement(document.getElementById("mydiv1-7"));
+dragElement(document.getElementById("mydiv1-8"));
+dragElement(document.getElementById("mydiv1-9"));
+
+dragElement(document.getElementById("mydiv2-1"));
+dragElement(document.getElementById("mydiv2-2"));
+dragElement(document.getElementById("mydiv2-3"));
+dragElement(document.getElementById("mydiv2-4"));
+dragElement(document.getElementById("mydiv2-5"));
+dragElement(document.getElementById("mydiv2-6"));
+dragElement(document.getElementById("mydiv2-7"));
+dragElement(document.getElementById("mydiv2-8"));
+dragElement(document.getElementById("mydiv2-9"));
+dragElement(document.getElementById("mydiv2-10"));
+dragElement(document.getElementById("mydiv2-11"));
+dragElement(document.getElementById("mydiv2-12"));
+dragElement(document.getElementById("mydiv2-13"));
+
+dragElement(document.getElementById("mydiv3-1"));
+dragElement(document.getElementById("mydiv3-2"));
+dragElement(document.getElementById("mydiv3-3"));
+dragElement(document.getElementById("mydiv3-4"));
+dragElement(document.getElementById("mydiv3-5"));
+dragElement(document.getElementById("mydiv3-6"));
+dragElement(document.getElementById("mydiv3-7"));
+dragElement(document.getElementById("mydiv3-8"));
+dragElement(document.getElementById("mydiv3-9"));
+dragElement(document.getElementById("mydiv3-10"));
+
+dragElement(document.getElementById("mydiv4-1"));
+dragElement(document.getElementById("mydiv4-2"));
+dragElement(document.getElementById("mydiv4-3"));
+dragElement(document.getElementById("mydiv4-4"));
+dragElement(document.getElementById("mydiv4-5"));
+dragElement(document.getElementById("mydiv4-6"));
+dragElement(document.getElementById("mydiv4-7"));
+dragElement(document.getElementById("mydiv4-8"));
+dragElement(document.getElementById("mydiv4-9"));
+dragElement(document.getElementById("mydiv4-10"));
+dragElement(document.getElementById("mydiv4-11"));
+
+dragElement(document.getElementById("mydiv5-1"));
+dragElement(document.getElementById("mydiv5-2"));
+dragElement(document.getElementById("mydiv5-3"));
+dragElement(document.getElementById("mydiv5-4"));
+dragElement(document.getElementById("mydiv5-5"));
+dragElement(document.getElementById("mydiv5-6"));
+dragElement(document.getElementById("mydiv5-7"));
+dragElement(document.getElementById("mydiv5-8"));
+dragElement(document.getElementById("mydiv5-9"));
+dragElement(document.getElementById("mydiv5-10"));
+dragElement(document.getElementById("mydiv5-11"));
+dragElement(document.getElementById("mydiv5-12"));
+
+dragElement(document.getElementById("mydiv6-1"));
+dragElement(document.getElementById("mydiv6-2"));
+dragElement(document.getElementById("mydiv6-3"));
+dragElement(document.getElementById("mydiv6-4"));
+dragElement(document.getElementById("mydiv6-5"));
+dragElement(document.getElementById("mydiv6-6"));
+dragElement(document.getElementById("mydiv6-7"));
+
+dragElement(document.getElementById("mydiv7-1"));
+dragElement(document.getElementById("mydiv7-2"));
+dragElement(document.getElementById("mydiv7-3"));
+dragElement(document.getElementById("mydiv7-4"));
+dragElement(document.getElementById("mydiv7-5"));
+dragElement(document.getElementById("mydiv7-6"));
+dragElement(document.getElementById("mydiv7-7"));
+dragElement(document.getElementById("mydiv7-8"));
+dragElement(document.getElementById("mydiv7-9"));
+dragElement(document.getElementById("mydiv7-10"));
+
+dragElement(document.getElementById("mydiv8-1"));
+dragElement(document.getElementById("mydiv8-2"));
+dragElement(document.getElementById("mydiv8-3"));
+dragElement(document.getElementById("mydiv8-4"));
+dragElement(document.getElementById("mydiv8-5"));
+dragElement(document.getElementById("mydiv8-6"));
+dragElement(document.getElementById("mydiv8-7"));
+
+dragElement(document.getElementById("mydiv9-1"));
+dragElement(document.getElementById("mydiv9-2"));
+dragElement(document.getElementById("mydiv9-3"));
+dragElement(document.getElementById("mydiv9-4"));
+dragElement(document.getElementById("mydiv9-5"));
+
+dragElement(document.getElementById("mydiv10-1"));
+dragElement(document.getElementById("mydiv10-2"));
+dragElement(document.getElementById("mydiv10-3"));
+dragElement(document.getElementById("mydiv10-4"));
+
+
+function dragElement(elmnt) {
+  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+  if (document.getElementById(elmnt.id + "header")) {
+    document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+  } else {
+    elmnt.onmousedown = dragMouseDown;
+  }
+
+  function dragMouseDown(e) {
+    e = e || window.event;
+    e.preventDefault();
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    document.onmouseup = closeDragElement;
+    document.onmousemove = elementDrag;
+  }
+
+  function elementDrag(e) {
+    e = e || window.event;
+    e.preventDefault();
+    pos1 = pos3 - e.clientX;
+    pos2 = pos4 - e.clientY;
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+  }
+
+  function closeDragElement() {
+    document.onmouseup = null;
+    document.onmousemove = null;
+  }
+}
+</script>
+
+</body>
+</html>
